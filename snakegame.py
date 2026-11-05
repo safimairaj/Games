@@ -4,7 +4,6 @@ import pygame
 import tkinter as tk
 from tkinter import messagebox
 
-
 class cube(object):
     rows = 20
     w = 500
@@ -178,7 +177,7 @@ def main():
     rows = 20
     win = pygame.display.set_mode((width, width))
     s = snake((255, 0, 0), (10, 10))
-    snack = cube(randomSnack(rows, s), color=(0, 255, 0))
+    snack = cube(randomSnack(rows, s), color=(0, 0, 255))
     flag = True
 
     clock = pygame.time.Clock()
@@ -201,6 +200,5 @@ def main():
         redrawWindow(win)
 
     pass
-
 
 main()
